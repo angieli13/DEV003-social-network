@@ -10,12 +10,12 @@ html {
 
 @font-face {
   font-family: glacial;
-  src: url(GlacialIndifference-Regular.otf);
+  src: url(/assets/GlacialIndifference-Regular.0818598f.otf);
 }
 
 @font-face {
   font-family: chewy;
-  src: url(Chewy.ttf);
+  src: url(/assets/Chewy.2691bd94.ttf);
 }
 
 .contenedor {
@@ -123,16 +123,12 @@ html {
   .publicarButton {
     font-size: 30%;
   }
-  .publicarButton{
-    max-width: 100px;
-  }
-
 }
 
 /*Boton de google*/
 @font-face {
   font-family: fuentegoogle;
-  src: url(ProductSans-Regular.ttf);
+  src: url(/assets/ProductSans-Regular.3108832a.ttf);
 }
 
 .google {
@@ -295,12 +291,12 @@ html {
   margin-right: 20%;
   margin-left: 20%;
   align-items: center;
-  justify-content: center;
   box-shadow: .5rem .5rem 1rem #434444,
     -.1rem -.1rem 1rem #fff;
 }
 
 .fotoPerfil {
+  display: block;
   border-color: white;
   border-width: 2px;
   border-radius: 80px;
@@ -316,7 +312,7 @@ html {
 .postUsuario {
   width: 80%;
   margin: 10px;
-  padding: 20px;
+  padding: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -324,19 +320,15 @@ html {
   border-color: #AEDFE4;
 }
 
-.contenedorBoton {
-  display: flex;
-  justify-content: center;
-  width: 85%;
-}
 .publicarButton {
-  width: 150px;
+  width: 80px;
   height: 35px;
   background: #bed73d;
   border-radius: 13px;
   font-family: 'Chewy', sans-serif;
   font-size: 2rem;
   margin: 1%;
+  margin-left: 80%;
   cursor: pointer;
   transition: all 1s ease;
   box-shadow: .5rem .5rem 1rem #434444,
@@ -371,7 +363,9 @@ html {
   font-size: 2rem;
   margin: 20px;
   text-align: justify;
-  padding: 30px 7% 5px;
+  padding: 30px;
+  padding-left: 30px;
+  padding-bottom: 5px;
   margin-left: 4%;
   width: 90%;
   background-image: url(https://i.postimg.cc/6qLtGZTK/welcome-to1k.png);
