@@ -9,11 +9,11 @@ import { Profile } from './components/profile.js';
 const root = document.getElementById('root');
 // Nuestras rutas
 const routes = {
-  '/DEV003-social-network/': Welcome,
-  '/DEV003-social-network/login': Login,
-  '/DEV003-social-network/register': RegisterComponent,
-  '/DEV003-social-network/wall': Wall,
-  '/DEV003-social-network/profile': Profile,
+  '/': Welcome,
+  '/login': Login,
+  '/register': RegisterComponent,
+  '/wall': Wall,
+  '/profile': Profile,
 };
 
 const onNavigate = (pathname) => { // es el "/" de cada ruta, nombre de la ruta

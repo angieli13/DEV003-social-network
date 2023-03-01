@@ -105,7 +105,7 @@ export const RegisterComponent = (onNavigate) => {
         // localStorage.setItem('user', JSON.stringify(user));
         crearDocumentoUsuario(user, user.email, 'https://i.postimg.cc/fy6ZRsgH/profile.jpg');
         alert('Registro exitoso');
-        onNavigate('/DEV003-social-network/login');
+        onNavigate('/login');
       })
         .catch((error) => {
           const errorCode = error.code;
@@ -131,7 +131,7 @@ export const RegisterComponent = (onNavigate) => {
     }
   });
   botonVolverAlogin.addEventListener('click', () => {
-    onNavigate('/DEV003-social-network/login');
+    onNavigate('/login');
   });
 
   return contenedor;

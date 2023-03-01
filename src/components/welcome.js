@@ -19,7 +19,7 @@ export const Welcome = (onNavigate) => {
   startButton.setAttribute('class', 'start');
 
   startButton.addEventListener('click', () => {
-    onNavigate('/DEV003-social-network/login');
+    onNavigate('/login');
   });
 
   div.append(textWelcome, textIntro, startButton);

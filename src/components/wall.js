@@ -84,7 +84,7 @@ export const Wall = (onNavigate) => {
     menuDisplayed.style.display = 'flex';
     const options = `<nav class='menu-nav'>
     <li><a class='option' id='option1'>Mi Perfil</a></li>
-    <li><a href='https://angiecombita.my.canva.site/dafbvb8btgu' class='option' id='option2'>Guía de plantas</a></li>
+    <li><a href='https://angiecombita.my.canva.site/likeplantslocalhost' class='option' id='option2'>Guía de plantas</a></li>
     <li><a class='option' id='option3'>Cerrar Sesión</a></li>
     <img src='https://i.postimg.cc/mg8dpxNp/icon-close.png' alt='close' class='close-button' id='close-button'>
     </nav>`;
@@ -95,7 +95,7 @@ export const Wall = (onNavigate) => {
       menuDisplayed.style.display = 'none';
     });
     const miPerfil = document.getElementById('option1');
-    miPerfil.addEventListener('click', () => onNavigate('/DEV003-social-network/profile'));
+    miPerfil.addEventListener('click', () => onNavigate('/profile'));
 
     const cerrarSesion = document.getElementById('option3');
     cerrarSesion.addEventListener('click', () => {
@@ -103,7 +103,7 @@ export const Wall = (onNavigate) => {
         // Sign-out successful.
         localStorage.removeItem('user');
         alert('Cierre de sesión exitoso');
-        onNavigate('/DEV003-social-network/');
+        onNavigate('/');
       })
         .catch(() => {
           alert('Algo paso');

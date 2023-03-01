@@ -22,7 +22,7 @@ export const Profile = (onNavigate) => {
   search.className = 'search';
   search.placeholder = '\u{1F50D} Search';
   iconNotificaciones.className = 'icon-notificaciones';
-  iconNotificaciones.src = '\\imagenes\\planta.png';
+  iconNotificaciones.src = 'https://i.postimg.cc/wjKz2JSD/planta.png';
   menuDisplayed.className = 'menu-desplegable';
   menuDisplayed.id = 'menu-desplegable-id';
 
@@ -43,7 +43,7 @@ export const Profile = (onNavigate) => {
     menuDisplayed.style.display = 'flex';
     const options = `<nav class='menu-nav'>
     <li><a class='option' id='option1'>Mi Perfil</a></li>
-    <li><a href='https://angiecombita.my.canva.site/dafbvb8btgu' class='option' id='option2'>Guía de plantas</a></li>
+    <li><a href='https://angiecombita.my.canva.site/likeplantslocalhost' class='option' id='option2'>Guía de plantas</a></li>
     <li><a class='option' id='option3'>Cerrar Sesión</a></li>
     <img src='https://i.postimg.cc/mg8dpxNp/icon-close.png' alt='close' class='close-button' id='close-button'>
     </nav>`;
@@ -54,14 +54,14 @@ export const Profile = (onNavigate) => {
       menuDisplayed.style.display = 'none';
     });
     const miPerfil = document.getElementById('option1');
-    miPerfil.addEventListener('click', () => onNavigate('/DEV003-social-network/profile'));
+    miPerfil.addEventListener('click', () => onNavigate('/profile'));
 
     const cerrarSesion = document.getElementById('option3');
     cerrarSesion.addEventListener('click', () => {
       logOut().then(() => {
         // Sign-out successful.
         alert('Cierre de sesión exitoso');
-        onNavigate('/DEV003-social-network/login');
+        onNavigate('/login');
       })
         .catch(() => {
           alert('Algo paso');
@@ -81,7 +81,7 @@ export const Profile = (onNavigate) => {
   });
 
   // Para regresar al muro
-  nombreSocialNetwork.addEventListener('click', () => onNavigate('/DEV003-social-network/wall'));
+  nombreSocialNetwork.addEventListener('click', () => onNavigate('/wall'));
 
   containerHeader.append(iconMenu, nombreSocialNetwork, search, iconNotificaciones);
 
